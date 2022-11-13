@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct CodeEditXPCUITestApp: App {
+    init() {
+        
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()

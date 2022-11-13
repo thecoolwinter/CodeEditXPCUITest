@@ -1,0 +1,51 @@
+//
+//  CEViewBuilder.swift
+//  CodeEditXPCUITest
+//
+//  Created by Khan Winter on 11/12/22.
+//
+
+import Foundation
+
+@resultBuilder
+struct CEViewBuilder {
+    public static func buildBlock<Content>(_ content: Content) -> CETupleView where Content: CEView {
+        return CETupleView(views: content)
+    }
+
+    public static func buildBlock<C0, C1>(_ c0: C0, _ c1: C1) -> CETupleView where C0: CEView, C1: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2>(_ c0: C0, _ c1: C1, _ c2: C2) -> CETupleView where C0: CEView, C1: CEView , C2: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2, C3>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3) -> CETupleView where C0: CEView, C1: CEView , C2: CEView, C3: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2, C3, C4>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, c4: C4) -> CETupleView where C0: CEView, C1: CEView, C2: CEView, C3: CEView, C4: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2, C3, C4, C5>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, c4: C4, _ c5: C5) -> CETupleView where C0: CEView, C1: CEView, C2: CEView, C3: CEView, C4: CEView, C5: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2, C3, C4, C5, C6>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, c4: C4, _ c5: C5, _ c6: C6) -> CETupleView where C0: CEView, C1: CEView, C2: CEView, C3: CEView, C4: CEView, C5: CEView, C6: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, c4: C4, _ c5: C5, _ c6: C6, _ c7: C7) -> CETupleView where C0: CEView, C1: CEView, C2: CEView, C3: CEView, C4: CEView, C5: CEView, C6: CEView, C7: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, c4: C4, _ c5: C5, _ c6: C6, _ c7: C7, _ c8: C8) -> CETupleView where C0: CEView, C1: CEView, C2: CEView, C3: CEView, C4: CEView, C5: CEView, C6: CEView, C7: CEView, C8: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+
+    public static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, c4: C4, _ c5: C5, _ c6: C6, _ c7: C7, _ c8: C8, _ c9: C9) -> CETupleView where C0: CEView, C1: CEView, C2: CEView, C3: CEView, C4: CEView, C5: CEView, C6: CEView, C7: CEView, C8: CEView, C9: CEView {
+        return CETupleView(views: (c0, c1))
+    }
+}

@@ -7,19 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CB946E429206541002AE00C /* CEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946E329206541002AE00C /* CEView.swift */; };
+		6CB946E529206545002AE00C /* CEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946E329206541002AE00C /* CEView.swift */; };
+		6CB946E729206549002AE00C /* CEText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946E629206549002AE00C /* CEText.swift */; };
+		6CB946E829206559002AE00C /* CEText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946E629206549002AE00C /* CEText.swift */; };
+		6CB946EB2920664B002AE00C /* CEViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946EA2920664B002AE00C /* CEViewBuilder.swift */; };
+		6CB946ED292067CB002AE00C /* CETupleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946EC292067CB002AE00C /* CETupleView.swift */; };
+		6CB946EE292069CB002AE00C /* CETupleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946EC292067CB002AE00C /* CETupleView.swift */; };
+		6CB946EF29206C9F002AE00C /* CEViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB946EA2920664B002AE00C /* CEViewBuilder.swift */; };
 		6CE2CD31291DDCD3007AA4DB /* CodeEditXPCUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD30291DDCD3007AA4DB /* CodeEditXPCUITestApp.swift */; };
 		6CE2CD33291DDCD3007AA4DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD32291DDCD3007AA4DB /* ContentView.swift */; };
 		6CE2CD35291DDCD4007AA4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE2CD34291DDCD4007AA4DB /* Assets.xcassets */; };
 		6CE2CD38291DDCD4007AA4DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE2CD37291DDCD4007AA4DB /* Preview Assets.xcassets */; };
+		6CE2CD43291DDD94007AA4DB /* CEViewSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD42291DDD94007AA4DB /* CEViewSendable.swift */; };
+		6CE2CD4B291DDF74007AA4DB /* TestUIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD4A291DDF74007AA4DB /* TestUIServiceProtocol.swift */; };
+		6CE2CD4F291DDF74007AA4DB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD4E291DDF74007AA4DB /* main.swift */; };
+		6CE2CD53291DDF74007AA4DB /* TestUIService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 6CE2CD48291DDF74007AA4DB /* TestUIService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CF73C05291DE4E200225207 /* TestUIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD4C291DDF74007AA4DB /* TestUIService.swift */; };
+		6CF73C07291DE51A00225207 /* CEViewSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD42291DDD94007AA4DB /* CEViewSendable.swift */; };
+		6CF73C08291DE51E00225207 /* TestUIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CD4A291DDF74007AA4DB /* TestUIServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6CE2CD51291DDF74007AA4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CE2CD25291DDCD3007AA4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CE2CD47291DDF74007AA4DB;
+			remoteInfo = TestUIService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CE2CD57291DDF74007AA4DB /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				6CE2CD53291DDF74007AA4DB /* TestUIService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6CB946E329206541002AE00C /* CEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEView.swift; sourceTree = "<group>"; };
+		6CB946E629206549002AE00C /* CEText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEText.swift; sourceTree = "<group>"; };
+		6CB946EA2920664B002AE00C /* CEViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEViewBuilder.swift; sourceTree = "<group>"; };
+		6CB946EC292067CB002AE00C /* CETupleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CETupleView.swift; sourceTree = "<group>"; };
 		6CE2CD2D291DDCD3007AA4DB /* CodeEditXPCUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeEditXPCUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE2CD30291DDCD3007AA4DB /* CodeEditXPCUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditXPCUITestApp.swift; sourceTree = "<group>"; };
 		6CE2CD32291DDCD3007AA4DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6CE2CD34291DDCD4007AA4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CE2CD37291DDCD4007AA4DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6CE2CD39291DDCD4007AA4DB /* CodeEditXPCUITest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeEditXPCUITest.entitlements; sourceTree = "<group>"; };
+		6CE2CD42291DDD94007AA4DB /* CEViewSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEViewSendable.swift; sourceTree = "<group>"; };
+		6CE2CD48291DDF74007AA4DB /* TestUIService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TestUIService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE2CD4A291DDF74007AA4DB /* TestUIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIServiceProtocol.swift; sourceTree = "<group>"; };
+		6CE2CD4C291DDF74007AA4DB /* TestUIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIService.swift; sourceTree = "<group>"; };
+		6CE2CD4E291DDF74007AA4DB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6CE2CD50291DDF74007AA4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +79,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CE2CD45291DDF74007AA4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CB946E229206530002AE00C /* CEView */ = {
+			isa = PBXGroup;
+			children = (
+				6CB946E329206541002AE00C /* CEView.swift */,
+				6CB946EC292067CB002AE00C /* CETupleView.swift */,
+				6CB946E629206549002AE00C /* CEText.swift */,
+			);
+			path = CEView;
+			sourceTree = "<group>";
+		};
+		6CB946E929206642002AE00C /* CEViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				6CB946EA2920664B002AE00C /* CEViewBuilder.swift */,
+			);
+			path = CEViewBuilder;
+			sourceTree = "<group>";
+		};
 		6CE2CD24291DDCD3007AA4DB = {
 			isa = PBXGroup;
 			children = (
 				6CE2CD2F291DDCD3007AA4DB /* CodeEditXPCUITest */,
+				6CE2CD49291DDF74007AA4DB /* TestUIService */,
 				6CE2CD2E291DDCD3007AA4DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				6CE2CD2D291DDCD3007AA4DB /* CodeEditXPCUITest.app */,
+				6CE2CD48291DDF74007AA4DB /* TestUIService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +130,7 @@
 			children = (
 				6CE2CD30291DDCD3007AA4DB /* CodeEditXPCUITestApp.swift */,
 				6CE2CD32291DDCD3007AA4DB /* ContentView.swift */,
+				6CE2CD3F291DDCF0007AA4DB /* CodeEditUI */,
 				6CE2CD34291DDCD4007AA4DB /* Assets.xcassets */,
 				6CE2CD39291DDCD4007AA4DB /* CodeEditXPCUITest.entitlements */,
 				6CE2CD36291DDCD4007AA4DB /* Preview Content */,
@@ -69,6 +146,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6CE2CD3F291DDCF0007AA4DB /* CodeEditUI */ = {
+			isa = PBXGroup;
+			children = (
+				6CE2CD42291DDD94007AA4DB /* CEViewSendable.swift */,
+				6CB946E229206530002AE00C /* CEView */,
+				6CB946E929206642002AE00C /* CEViewBuilder */,
+			);
+			path = CodeEditUI;
+			sourceTree = "<group>";
+		};
+		6CE2CD49291DDF74007AA4DB /* TestUIService */ = {
+			isa = PBXGroup;
+			children = (
+				6CE2CD4A291DDF74007AA4DB /* TestUIServiceProtocol.swift */,
+				6CE2CD4C291DDF74007AA4DB /* TestUIService.swift */,
+				6CE2CD4E291DDF74007AA4DB /* main.swift */,
+				6CE2CD50291DDF74007AA4DB /* Info.plist */,
+			);
+			path = TestUIService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +177,34 @@
 				6CE2CD29291DDCD3007AA4DB /* Sources */,
 				6CE2CD2A291DDCD3007AA4DB /* Frameworks */,
 				6CE2CD2B291DDCD3007AA4DB /* Resources */,
+				6CE2CD57291DDF74007AA4DB /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6CE2CD52291DDF74007AA4DB /* PBXTargetDependency */,
 			);
 			name = CodeEditXPCUITest;
 			productName = CodeEditXPCUITest;
 			productReference = 6CE2CD2D291DDCD3007AA4DB /* CodeEditXPCUITest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6CE2CD47291DDF74007AA4DB /* TestUIService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CE2CD54291DDF74007AA4DB /* Build configuration list for PBXNativeTarget "TestUIService" */;
+			buildPhases = (
+				6CE2CD44291DDF74007AA4DB /* Sources */,
+				6CE2CD45291DDF74007AA4DB /* Frameworks */,
+				6CE2CD46291DDF74007AA4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestUIService;
+			productName = TestUIService;
+			productReference = 6CE2CD48291DDF74007AA4DB /* TestUIService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,9 +214,12 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					6CE2CD2C291DDCD3007AA4DB = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					6CE2CD47291DDF74007AA4DB = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -118,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				6CE2CD2C291DDCD3007AA4DB /* CodeEditXPCUITest */,
+				6CE2CD47291DDF74007AA4DB /* TestUIService */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +253,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CE2CD46291DDF74007AA4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +267,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB946EB2920664B002AE00C /* CEViewBuilder.swift in Sources */,
+				6CB946ED292067CB002AE00C /* CETupleView.swift in Sources */,
 				6CE2CD33291DDCD3007AA4DB /* ContentView.swift in Sources */,
+				6CF73C08291DE51E00225207 /* TestUIServiceProtocol.swift in Sources */,
 				6CE2CD31291DDCD3007AA4DB /* CodeEditXPCUITestApp.swift in Sources */,
+				6CB946E729206549002AE00C /* CEText.swift in Sources */,
+				6CE2CD43291DDD94007AA4DB /* CEViewSendable.swift in Sources */,
+				6CB946E429206541002AE00C /* CEView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE2CD44291DDF74007AA4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB946EF29206C9F002AE00C /* CEViewBuilder.swift in Sources */,
+				6CE2CD4B291DDF74007AA4DB /* TestUIServiceProtocol.swift in Sources */,
+				6CF73C05291DE4E200225207 /* TestUIService.swift in Sources */,
+				6CB946E829206559002AE00C /* CEText.swift in Sources */,
+				6CF73C07291DE51A00225207 /* CEViewSendable.swift in Sources */,
+				6CE2CD4F291DDF74007AA4DB /* main.swift in Sources */,
+				6CB946EE292069CB002AE00C /* CETupleView.swift in Sources */,
+				6CB946E529206545002AE00C /* CEView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CE2CD52291DDF74007AA4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CE2CD47291DDF74007AA4DB /* TestUIService */;
+			targetProxy = 6CE2CD51291DDF74007AA4DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6CE2CD3A291DDCD4007AA4DB /* Debug */ = {
@@ -180,6 +337,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -240,6 +398,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -263,17 +422,21 @@
 		6CE2CD3D291DDCD4007AA4DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CodeEditXPCUITest/CodeEditXPCUITest.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeEditXPCUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7DAW426J6S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeEditXPCUITest;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,17 +453,21 @@
 		6CE2CD3E291DDCD4007AA4DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CodeEditXPCUITest/CodeEditXPCUITest.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeEditXPCUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7DAW426J6S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeEditXPCUITest;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +476,52 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.WindChillMedia.CodeEditXPCUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6CE2CD55291DDF74007AA4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7DAW426J6S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestUIService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestUIService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WindChillMedia.TestUIService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6CE2CD56291DDF74007AA4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7DAW426J6S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestUIService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestUIService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WindChillMedia.TestUIService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -331,6 +544,15 @@
 			buildConfigurations = (
 				6CE2CD3D291DDCD4007AA4DB /* Debug */,
 				6CE2CD3E291DDCD4007AA4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CE2CD54291DDF74007AA4DB /* Build configuration list for PBXNativeTarget "TestUIService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE2CD55291DDF74007AA4DB /* Debug */,
+				6CE2CD56291DDF74007AA4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
