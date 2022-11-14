@@ -10,6 +10,9 @@ import Foundation
 // Typealiases
 
 typealias Text = CEText
+typealias HStack = CEHStack
+typealias VStack = CEVStack
+typealias ZStack = CEZStack
 
 // Service Delegate
 

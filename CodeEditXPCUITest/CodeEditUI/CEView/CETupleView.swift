@@ -18,23 +18,31 @@ class CETupleView: NSObject, CEView {
 
     required init?(coder: NSCoder) {
         guard
-            let views = try? coder.decodeTopLevelObject(of: [NSArray.self, CEText.self], forKey: "views") as? [any CEView]
+            let views = try? coder.decodeTopLevelObject(of: [NSArray.self,
+                                                             CETupleView.self,
+                                                             CEText.self,
+                                                             CEHStack.self,
+                                                             CEVStack.self,
+                                                             CEZStack.self], forKey: "views") as? [any CEView]
         else {
             return nil
         }
 
         self.views = views
     }
-
+    
+    let id: UUID = UUID()
     let views: [any CEView]
 
     var body: some View {
-        // SwiftUI has a maximum of 10 child views per view. So we can hardcode this limit.
-        // This type of hard limit can be imposed on other "grouping" views like `Stack`s and `ScrollView`s.
-        ForEach(0..<10) { i in
-            if self.views.count > i {
-                self.strongTypedView(view: self.views[i])
-            }
+        if views.count == 0 {
+            return AnyView(EmptyView())
+        } else {
+            return AnyView(
+                ForEach(views, id: \.id) { view in
+                    self.strongTypedView(view: view)
+                }
+            )
         }
     }
 

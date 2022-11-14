@@ -27,8 +27,8 @@ struct ContentView: View {
             }
             buildView()
         }
-        .frame(minWidth: 250, idealWidth: 500, maxWidth: nil,
-               minHeight: 250, idealHeight: 500, maxHeight: nil)
+        .frame(minWidth: 300, idealWidth: 1000, maxWidth: nil,
+               minHeight: 300, idealHeight: 1000, maxHeight: nil)
         .padding()
         .onAppear {
             connectionToService = NSXPCConnection(serviceName: "com.WindChillMedia.TestUIService")

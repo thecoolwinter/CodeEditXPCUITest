@@ -10,8 +10,14 @@ import Foundation
 class TestUIService: NSObject, TestUIServiceProtocol {
     @objc func getViewToDisplay(_ completion: @escaping (CEViewSendable) -> Void) {
         let sendable = CEViewSendable {
-            Text("Hello World!")
-            Text("View 2")
+            VStack {
+                Text("VStack here!")
+                HStack {
+                    Text("Hello World!")
+                    Text("View 2")
+                }
+                Text("End of VStack")
+            }
         }
 
         completion(sendable)

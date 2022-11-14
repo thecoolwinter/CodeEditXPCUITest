@@ -31,6 +31,7 @@ class CEText: NSObject, CEView {
         self.text = text as String
     }
 
+    let id: UUID = UUID()
     let text: String
 
     var body: SwiftUI.Text {
