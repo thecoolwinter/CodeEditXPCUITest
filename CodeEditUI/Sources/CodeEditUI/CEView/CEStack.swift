@@ -9,19 +9,19 @@ import Foundation
 import SwiftUI
 
 @objc(CEHStack)
-class CEHStack: NSObject, CEView {
-    static var supportsSecureCoding: Bool = true
+public class CEHStack: NSObject, CEView {
+    public static var supportsSecureCoding: Bool { true }
 
-    init(@CEViewBuilder _ view: () -> CETupleView) {
+    public init(@CEViewBuilder _ view: () -> CETupleView) {
         self.view = view()
         super.init()
     }
 
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(view, forKey: "view")
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         guard
             let view = coder.decodeObject(of: CETupleView.self, forKey: "view")
         else {
@@ -31,30 +31,29 @@ class CEHStack: NSObject, CEView {
         self.view = view
     }
 
-    let id: UUID = UUID()
     let view: CETupleView
 
-    var body: some View {
-        SwiftUI.HStack {
+    public var body: some View {
+        HStack {
             view.body
         }
     }
 }
 
 @objc(CEVStack)
-class CEVStack: NSObject, CEView {
-    static var supportsSecureCoding: Bool = true
+public class CEVStack: NSObject, CEView {
+    public static var supportsSecureCoding: Bool { true }
 
-    init(@CEViewBuilder _ view: () -> CETupleView) {
+    public init(@CEViewBuilder _ view: () -> CETupleView) {
         self.view = view()
         super.init()
     }
 
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(view, forKey: "view")
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         guard
             let view = coder.decodeObject(of: CETupleView.self, forKey: "view")
         else {
@@ -64,30 +63,29 @@ class CEVStack: NSObject, CEView {
         self.view = view
     }
 
-    let id: UUID = UUID()
     let view: CETupleView
 
-    var body: some View {
-        SwiftUI.VStack {
+    public var body: some View {
+        VStack {
             view.body
         }
     }
 }
 
 @objc(CEZStack)
-class CEZStack: NSObject, CEView {
-    static var supportsSecureCoding: Bool = true
+public class CEZStack: NSObject, CEView {
+    public static var supportsSecureCoding: Bool { true }
 
-    init(@CEViewBuilder _ view: () -> CETupleView) {
+    public init(@CEViewBuilder _ view: () -> CETupleView) {
         self.view = view()
         super.init()
     }
 
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(view, forKey: "view")
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         guard
             let view = coder.decodeObject(of: CETupleView.self, forKey: "view")
         else {
@@ -97,11 +95,10 @@ class CEZStack: NSObject, CEView {
         self.view = view
     }
 
-    let id: UUID = UUID()
     let view: CETupleView
 
-    var body: some View {
-        SwiftUI.ZStack {
+    public var body: some View {
+        ZStack {
             view.body
         }
     }

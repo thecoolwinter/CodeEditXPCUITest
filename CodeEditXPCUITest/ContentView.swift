@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CodeEditUI
 
 struct ContentView: View {
     @State var connectionToService: NSXPCConnection? = nil

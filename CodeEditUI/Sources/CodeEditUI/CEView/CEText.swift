@@ -9,32 +9,30 @@ import Foundation
 import SwiftUI
 
 @objc(CEText)
-class CEText: NSObject, CEView {
-    static var supportsSecureCoding: Bool = true
+public class CEText: NSObject, CEView {
+    public static var supportsSecureCoding: Bool { true }
 
-    init(_ text: String) {
+    public init(_ text: String) {
         self.text = text
         super.init()
     }
 
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(text as NSString, forKey: "text")
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         guard
             let text = coder.decodeObject(of: NSString.self, forKey: "text")
         else {
             return nil
         }
-
         self.text = text as String
     }
 
-    let id: UUID = UUID()
     let text: String
 
-    var body: SwiftUI.Text {
-        SwiftUI.Text(text)
+    public var body: SwiftUI.Text {
+        Text(text)
     }
 }

@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 
 @objc(CETupleView)
-class CETupleView: NSObject, CEView {
-    static var supportsSecureCoding: Bool = true
+public class CETupleView: NSObject, CEView {
+    public static var supportsSecureCoding: Bool { true }
 
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(views, forKey: "views")
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         guard
             let views = try? coder.decodeTopLevelObject(of: [NSArray.self,
                                                              CETupleView.self,
@@ -30,17 +30,18 @@ class CETupleView: NSObject, CEView {
 
         self.views = views
     }
-    
-    let id: UUID = UUID()
+
     let views: [any CEView]
 
-    var body: some View {
+    public var body: some View {
         if views.count == 0 {
             return AnyView(EmptyView())
         } else {
             return AnyView(
-                ForEach(views, id: \.id) { view in
-                    self.strongTypedView(view: view)
+                ForEach(0..<10) { i in
+                    if self.views.count > i {
+                        self.strongTypedView(view: self.views[i])
+                    }
                 }
             )
         }
